@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    #root {
+        margin: 0 5em;
+        text-align: center;
+    }
+
+    #workspace .header {
+        @apply bg-slate-100 p-8 md:p-0 pt-6 md:p-8 text-center md:text-left space-y-4 text-lg font-medium;
+    }
+
+    #workspace .content {
+        @apply bg-yellow-200 h-screen pt-6;
+    }
+}

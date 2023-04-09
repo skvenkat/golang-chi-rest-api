@@ -1,0 +1,9 @@
+cache:
+  type: inmem
+credentials:
+  key: _
+  secret: _
+database:
+  filename: mydatabase.db
+server:
+  port: 8080
