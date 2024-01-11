@@ -27,7 +27,7 @@ RUN GOOS=linux go build -ldflags="-s -w" -o ./bin/apiserver ./main.go
 
 RUN cd web && npm install && yarn build && cd ..
 
-FROM alpine:3.17
+FROM alpine:3.18.5
 RUN apk --no-cache add ca-certificates
 WORKDIR /app
 COPY --from=build /go/src/app/bin /app
